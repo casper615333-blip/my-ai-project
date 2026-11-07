@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 新聞結構化分析工具 - 作品頁</title>
+    <style>
+        body { font-family: sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; line-height: 1.6; color: #333; }
+        h1, h2 { color: #2563eb; }
+        pre { background: #f4f4f4; padding: 15px; border-radius: 5px; overflow-x: auto; }
+        .card { background: #fff; border: 1px solid #ddd; padding: 20px; margin-bottom: 20px; border-radius: 8px; }
+    </style>
+</head>
+<body>
+    <h1>📰 AI 新聞結構化分析工具</h1>
+
+    <div class="card">
+        <h2>1. 做了什麼 (Overview)</h2>
+        <p>本專案使用 Python 與 OpenAI LLM 打造自動化結構化分析工具，能將新聞自動濃縮為 JSON 格式的標題、三重點與情緒評估。</p>
+    </div>
+
+    <div class="card">
+        <h2>2. 怎麼執行 (How to Run)</h2>
+        <pre><code>git clone 你的專案網址
+cd my-ai-project
+cp .env.example .env  # 填入金鑰
+uv run main.py</code></pre>
+    </div>
+
+    <div class="card">
+        <h2>3. 執行結果 (Result)</h2>
+        <pre>{
+  "title": "臺灣開放銀行導入 AI 審查",
+  "summary_points": ["合規時間縮短至數小時", "降低新創合作門檻", "提升金融體驗"],
+  "sentiment": "正向"
+}</pre>
+    </div>
+
+    <div class="card">
+        <h2>4. AI 使用說明 (AI Usage & Reflection)</h2>
+        <ul>
+            <li><strong>使用的 AI 工具：</strong> 本專案開發過程使用 ChatGPT 與 Gemini 協助撰寫 <code>main.py</code> 的 JSON 結構語法與 <code>index.html</code> 排版。</li>
+            <li><strong>應用位置：</strong> 程式碼架構設計與 Prompt 調整。</li>
+            <li><strong>自我修改與驗證：</strong> 嚴格檢查並將 <code>.env</code> 加入 <code>.gitignore</code>，確保機敏金鑰不會外洩。</li>
+        </ul>
+    </div>
+</body>
+</html>
